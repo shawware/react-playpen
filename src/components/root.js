@@ -13,8 +13,10 @@ class Root extends Component {
 				<Basic text="Welcome" />
 				<B1 name="Stop" />
 				<B2 name="Go" />
-				<B3 name="Count" />
-				<Counter />
+				<B3 text="Drink Beer" name="beer" />
+				<B3 text="Drink Wine" name="wine" />
+				<Counter text="Beers Drunk" name="beer" />
+				<Counter text="Wines Drunk" name="wine" />
 			</div>
 		);
 	}

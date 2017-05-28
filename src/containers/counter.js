@@ -7,9 +7,12 @@ import { connect } from 'react-redux';
 class Counter extends Component {
 
 	render() {
+		var name = this.props.name;
+		var counts = this.props.counts;
+		var count = name in counts ? counts[name] : 0;
 		return (
 			<div>
-				<p><strong>Count: {this.props.count}</strong></p>
+				<p><strong>{this.props.text}: {count}</strong></p>
 			</div>
 		);
 	}
@@ -22,7 +25,7 @@ class Counter extends Component {
  */
 function mapStateToProps(state) {
 	return {
-		count: state.count
+		counts: state.counts
 	};
 }
 

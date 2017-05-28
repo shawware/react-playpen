@@ -13,7 +13,7 @@ class B3 extends Component {
 		// Create a function to call the given incrementor action, passing it the counter name.
 		return(
 			<button onClick={() => this.props.incrementor(this.props.name)}>
-				{this.props.name}
+				{this.props.text}
 			</button>
 		);
 	}
