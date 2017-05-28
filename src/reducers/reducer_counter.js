@@ -1,6 +1,6 @@
 /*
  * Respond to actions relating to a count.
- * For relevant action types, the state will the count itself.
+ * For relevant action types, the state will be the count itself.
  */
 export default function(state = null, action) {
 	switch (action.type) {

@@ -10,7 +10,7 @@ class Root extends Component {
 	render() {
 		return(
 			<div>
-				<Basic />
+				<Basic text="Welcome" />
 				<B1 name="Stop" />
 				<B2 name="Go" />
 				<B3 name="Count" />

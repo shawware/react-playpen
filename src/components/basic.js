@@ -4,7 +4,7 @@ class Basic extends Component {
 	render() {
 		return(
 			<p className="basic">
-				Basic Text
+				{this.props.text}
 			</p>
 		);
 	}
