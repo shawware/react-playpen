@@ -26,7 +26,7 @@ class B3 extends Component {
  */
 function mapStateToProps(state) {
 	return {
-		count: state.count
+		counts: state.counts
 	};
 }
 
