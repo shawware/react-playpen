@@ -1,3 +1,5 @@
+import { INCREMENT_COUNTER } from '../actions/incrementCounter';
+
 /*
  * Manage the state of all the counts.
  */
@@ -9,7 +11,7 @@ const initialCounts = {};
  */
 export default function(state = initialCounts, action) {
 	switch (action.type) {
-		case 'INCREMENT':
+		case INCREMENT_COUNTER:
 			// At this point we have received state.counts!
 			// Remember, you must not mutate the argument to a reducer, so we create a copy.
 			var updatedCounts = Object.assign({}, state);
