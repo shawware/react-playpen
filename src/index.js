@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
 
 import Root from './components/root';
 import reducers from './reducers';
 
 // Build a store to hold the state.
-var store = createStore(reducers);
+var store = createStore(
+	reducers,
+	applyMiddleware(thunk)
+);
 
 // If we want to access the state here, this is how get to it.
 //var state = store.getState();
